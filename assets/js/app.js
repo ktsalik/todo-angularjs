@@ -8,5 +8,10 @@ angular
         controller: 'DashboardController',
         controllerAs: 'vm',
       })
+      .when('/new', {
+        templateUrl: 'assets/templates/new.view.html',
+        controller: 'NewController',
+        controllerAs: 'vm',
+      })
       .otherwise('/');
   }]);

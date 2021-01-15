@@ -1,0 +1,32 @@
+@import 'variables';
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  user-select: none;
+
+  .new-record-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &.light {
+    .new-record-container {
+      color: $light-color;
+      border-color: $light-border-color;
+    }
+  }
+}
