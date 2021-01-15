@@ -13,5 +13,10 @@ angular
         controller: 'NewController',
         controllerAs: 'vm',
       })
+      .when('/todo/:id', {
+        templateUrl: 'assets/templates/todo.view.html',
+        controller: 'TodoController',
+        controllerAs: 'vm',
+      })
       .otherwise('/');
   }]);

@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+body, input, textarea, button {
+  font-family: Ubuntu;
+}
+
 .view {
   padding: 30px;
 }

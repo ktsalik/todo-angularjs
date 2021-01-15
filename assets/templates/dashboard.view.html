@@ -8,8 +8,9 @@
   <div class="list">
     <div
       class="item"
-      ng-click="vm.openTodo()"
-      ng-repeat="todo in vm.view.todos">
+      ng-repeat="todo in vm.view.todos"
+      ng-click="vm.openTodo(todo.id)"
+      ng-class="{'last-seen': todo.lastSeen}">
       <div class="title">{{todo.title}}</div>
       <div class="text">{{todo.text}}</div>
     </div>
