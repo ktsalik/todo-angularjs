@@ -1,3 +1,18 @@
-<div class="New">
-  New Todo
+<div class="New view">
+  <div
+    ng-click="vm.goBack()"
+    class="btn-back">
+    ←
+  </div>
+
+  <todo
+    title="vm.view.title"
+    text="vm.view.text">
+  </todo>
+
+  <button
+    class="btn-add"
+    ng-click="vm.add()">
+    Add
+  </button>
 </div>

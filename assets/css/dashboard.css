@@ -12,7 +12,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -43,8 +42,9 @@
   text-decoration: none;
 }
 
-.Dashboard.light .new-record-container {
-  color: #333;
-  border-color: #CCC;
+#App.light .new-record-container {
+  color: #333333;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=dashboard.css.map */

@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
   user-select: none;
 
   .new-record-container {
@@ -22,11 +21,13 @@
     cursor: pointer;
     text-decoration: none;
   }
+}
 
-  &.light {
-    .new-record-container {
-      color: $light-color;
-      border-color: $light-border-color;
-    }
+#App.light {
+
+  .new-record-container {
+    color: $light-color;
+    border-color: $light-border-color;
+    background-color: $light-background-color;
   }
 }

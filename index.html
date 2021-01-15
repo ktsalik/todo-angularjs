@@ -6,14 +6,21 @@
   <title>Todo AngularJS</title>
   <meta name="description" content="A simple todo app for skills demonstration reason">
   <meta name="author" content="Kostas Tsalikides">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="assets/css/app.css" rel="stylesheet">
   <link href="assets/css/dashboard.css" rel="stylesheet">
   <link href="assets/css/new.css" rel="stylesheet">
+  <link href="assets/css/todo.css" rel="stylesheet">
 </head>
-<body ng-app="TodoApp" ng-controller="AppController as vm">
-
-  <ng-view></ng-view>
+<body>
+  <div
+    id="App"
+    ng-class="{'light': vm.theme == 'light'}"
+    ng-app="TodoApp"
+    ng-controller="AppController as vm">
+    <ng-view></ng-view>
+  </div>
 
   <script src="assets/lib/angular.min.js"></script>
   <script src="assets/lib/angular-route.min.js"></script>
@@ -22,5 +29,6 @@
   <script src="assets/js/app.controller.js"></script>
   <script src="assets/js/dashboard.controller.js"></script>
   <script src="assets/js/new.controller.js"></script>
+  <script src="assets/js/todo.directive.js"></script>
 </body>
 </html>
