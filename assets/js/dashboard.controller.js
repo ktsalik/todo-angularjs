@@ -1,6 +1,6 @@
 angular
   .module('TodoApp')
-  .controller('DashboardController', ['$scope', '$rootScope', function($scope, $rootScope) {
+  .controller('DashboardController', ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
     let vm = this;
 
     vm.view = {
@@ -10,4 +10,8 @@ angular
     $rootScope.$watch('todos', function(val) {
       vm.view.todos = val;
     });
+
+    vm.openTodo = function() {
+      
+    };
   }]);

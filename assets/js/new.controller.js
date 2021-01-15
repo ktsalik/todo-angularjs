@@ -18,5 +18,6 @@ angular
         text: vm.view.text,
       });
       vm.view.title = vm.view.text = '';
+      vm.goBack();
     };
   }]);

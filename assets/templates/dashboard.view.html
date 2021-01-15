@@ -4,4 +4,14 @@
     class="new-record-container">
     +
   </a>
+  
+  <div class="list">
+    <div
+      class="item"
+      ng-click="vm.openTodo()"
+      ng-repeat="todo in vm.view.todos">
+      <div class="title">{{todo.title}}</div>
+      <div class="text">{{todo.text}}</div>
+    </div>
+  </div>
 </div>
