@@ -25,6 +25,6 @@ angular
         id: 4,
         title: 'A big enough title',
         text: 'quxxxxx quxxxxxx quxxxxxxx quxxxxxxxx quxxxxxxxxx quxxxxxxxxxxx quxxxxxxxxxxxx quxxxxxxxxxxxxxx',
-      }
+      },
     ];
   }]);
